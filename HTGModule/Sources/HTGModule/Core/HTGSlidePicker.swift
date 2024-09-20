@@ -42,7 +42,7 @@ struct HTGSlidePicker: View {
                         let handleIndex = index
 
                         Rectangle()
-                            .fill(.whiteOr)
+                            .fill(.htg(.white))
                             .frame(width: handleWidth)
                             .animation(.easeInOut(duration: 0.2), value: self.activeHandleIndex)
                             .gesture(
@@ -62,7 +62,7 @@ struct HTGSlidePicker: View {
 
     /// 주어진 인덱스에 따라 색상을 반환합니다.
     private func colorForIndex(_ index: Int) -> Color {
-        let colors: [Color] = [.blackOr]
+        let colors: [Color] = [.htg(.black)]
         return colors[index % colors.count]
     }
 

@@ -35,7 +35,7 @@ extension GiveupAnotherView {
                 .padding(10)
                 .background {
                     Rectangle()
-                        .stroke(.blackOr)
+                        .stroke(.htg(.black))
                 }
             
             Spacer()

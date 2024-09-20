@@ -7,58 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7960640C2C96DD08000ACF69 /* HTGApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7960640B2C96DD08000ACF69 /* HTGApp.swift */; };
-		796064102C96DD09000ACF69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7960640F2C96DD09000ACF69 /* Assets.xcassets */; };
-		796064132C96DD09000ACF69 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 796064122C96DD09000ACF69 /* Preview Assets.xcassets */; };
-		7960641C2C96DD34000ACF69 /* Onboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7960641B2C96DD34000ACF69 /* Onboard.swift */; };
-		796064212C96EC0F000ACF69 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796064202C96EC0F000ACF69 /* HomeView.swift */; };
-		796064262C96FA37000ACF69 /* GiveupOnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796064252C96FA37000ACF69 /* GiveupOnboardView.swift */; };
-		79D33B382C97F70300F7DC1D /* GiveupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D33B372C97F70300F7DC1D /* GiveupViewModel.swift */; };
-		79D33B3B2C97F81E00F7DC1D /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D33B3A2C97F81E00F7DC1D /* Buttons.swift */; };
-		79D33B3D2C98018C00F7DC1D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D33B3C2C98018C00F7DC1D /* HomeViewModel.swift */; };
-		79D33B3F2C98039900F7DC1D /* GiveupTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D33B3E2C98039900F7DC1D /* GiveupTitleView.swift */; };
-		79D33B412C9809C600F7DC1D /* GiveupFeelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D33B402C9809C600F7DC1D /* GiveupFeelView.swift */; };
-		79D33B432C9811D300F7DC1D /* Rects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D33B422C9811D300F7DC1D /* Rects.swift */; };
-		79D33B452C985E6A00F7DC1D /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D33B442C985E6A00F7DC1D /* Colors.swift */; };
-		79D33B482C987CF500F7DC1D /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D33B472C987CF500F7DC1D /* ChatView.swift */; };
-		79D33B4B2C987DDB00F7DC1D /* TypingChatAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D33B4A2C987DDB00F7DC1D /* TypingChatAnimationView.swift */; };
-		79D33B4D2C987DF200F7DC1D /* EmptyTypingChatAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D33B4C2C987DF200F7DC1D /* EmptyTypingChatAnimationView.swift */; };
-		79D33B502C987FC500F7DC1D /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D33B4F2C987FC500F7DC1D /* ChatModel.swift */; };
-		79D33B522C9953C400F7DC1D /* HTGSlidePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D33B512C9953C400F7DC1D /* HTGSlidePicker.swift */; };
-		79D33B542C99563000F7DC1D /* GiveupAnotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D33B532C99563000F7DC1D /* GiveupAnotherView.swift */; };
-		79D33B562C9957EF00F7DC1D /* GiveupDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D33B552C9957EF00F7DC1D /* GiveupDateView.swift */; };
-		79D33B582C99BD1D00F7DC1D /* CalloutBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D33B572C99BD1D00F7DC1D /* CalloutBlock.swift */; };
-		79D33B5B2C99BD7A00F7DC1D /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D33B5A2C99BD7A00F7DC1D /* Date+.swift */; };
-		79D33B5D2C99D79100F7DC1D /* GiveupResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D33B5C2C99D79100F7DC1D /* GiveupResultView.swift */; };
-		79D33B5F2C99E39300F7DC1D /* FeelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D33B5E2C99E39300F7DC1D /* FeelModel.swift */; };
+		F43D6F122C9D71CE00756290 /* HTGModule in Frameworks */ = {isa = PBXBuildFile; productRef = F43D6F112C9D71CE00756290 /* HTGModule */; };
+		F454BF972C9D658F000652F7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F454BF962C9D658F000652F7 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		796064082C96DD08000ACF69 /* HTG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HTG.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7960640B2C96DD08000ACF69 /* HTGApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTGApp.swift; sourceTree = "<group>"; };
-		7960640F2C96DD09000ACF69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		796064122C96DD09000ACF69 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7960641B2C96DD34000ACF69 /* Onboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboard.swift; sourceTree = "<group>"; };
-		796064202C96EC0F000ACF69 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		796064252C96FA37000ACF69 /* GiveupOnboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveupOnboardView.swift; sourceTree = "<group>"; };
-		79D33B372C97F70300F7DC1D /* GiveupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveupViewModel.swift; sourceTree = "<group>"; };
-		79D33B3A2C97F81E00F7DC1D /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
-		79D33B3C2C98018C00F7DC1D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		79D33B3E2C98039900F7DC1D /* GiveupTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveupTitleView.swift; sourceTree = "<group>"; };
-		79D33B402C9809C600F7DC1D /* GiveupFeelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveupFeelView.swift; sourceTree = "<group>"; };
-		79D33B422C9811D300F7DC1D /* Rects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rects.swift; sourceTree = "<group>"; };
-		79D33B442C985E6A00F7DC1D /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		79D33B472C987CF500F7DC1D /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
-		79D33B4A2C987DDB00F7DC1D /* TypingChatAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypingChatAnimationView.swift; sourceTree = "<group>"; };
-		79D33B4C2C987DF200F7DC1D /* EmptyTypingChatAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTypingChatAnimationView.swift; sourceTree = "<group>"; };
-		79D33B4F2C987FC500F7DC1D /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
-		79D33B512C9953C400F7DC1D /* HTGSlidePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTGSlidePicker.swift; sourceTree = "<group>"; };
-		79D33B532C99563000F7DC1D /* GiveupAnotherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveupAnotherView.swift; sourceTree = "<group>"; };
-		79D33B552C9957EF00F7DC1D /* GiveupDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveupDateView.swift; sourceTree = "<group>"; };
-		79D33B572C99BD1D00F7DC1D /* CalloutBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalloutBlock.swift; sourceTree = "<group>"; };
-		79D33B5A2C99BD7A00F7DC1D /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
-		79D33B5C2C99D79100F7DC1D /* GiveupResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveupResultView.swift; sourceTree = "<group>"; };
-		79D33B5E2C99E39300F7DC1D /* FeelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelModel.swift; sourceTree = "<group>"; };
+		F454BF952C9D6556000652F7 /* HTGModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = HTGModule; sourceTree = "<group>"; };
+		F454BF962C9D658F000652F7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +22,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F43D6F122C9D71CE00756290 /* HTGModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,8 +32,10 @@
 		796063FF2C96DD08000ACF69 = {
 			isa = PBXGroup;
 			children = (
+				F454BF952C9D6556000652F7 /* HTGModule */,
 				7960640A2C96DD08000ACF69 /* HTG */,
 				796064092C96DD08000ACF69 /* Products */,
+				F43D6F102C9D71CE00756290 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,112 +50,16 @@
 		7960640A2C96DD08000ACF69 /* HTG */ = {
 			isa = PBXGroup;
 			children = (
-				79D33B392C97F81400F7DC1D /* Core */,
-				79D33B4E2C987FBB00F7DC1D /* Domain */,
-				796064192C96DD20000ACF69 /* Feature */,
-				7960640B2C96DD08000ACF69 /* HTGApp.swift */,
-				7960640F2C96DD09000ACF69 /* Assets.xcassets */,
-				796064112C96DD09000ACF69 /* Preview Content */,
+				F454BF962C9D658F000652F7 /* main.swift */,
 			);
 			path = HTG;
 			sourceTree = "<group>";
 		};
-		796064112C96DD09000ACF69 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				796064122C96DD09000ACF69 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		796064192C96DD20000ACF69 /* Feature */ = {
-			isa = PBXGroup;
-			children = (
-				79D33B462C987CE700F7DC1D /* CommonViews */,
-				796064242C96FA20000ACF69 /* Giveup */,
-				7960641D2C96EBE6000ACF69 /* Home */,
-				7960641A2C96DD28000ACF69 /* Onboard */,
-			);
-			path = Feature;
-			sourceTree = "<group>";
-		};
-		7960641A2C96DD28000ACF69 /* Onboard */ = {
-			isa = PBXGroup;
-			children = (
-				7960641B2C96DD34000ACF69 /* Onboard.swift */,
-			);
-			path = Onboard;
-			sourceTree = "<group>";
-		};
-		7960641D2C96EBE6000ACF69 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				796064202C96EC0F000ACF69 /* HomeView.swift */,
-				79D33B3C2C98018C00F7DC1D /* HomeViewModel.swift */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		796064242C96FA20000ACF69 /* Giveup */ = {
-			isa = PBXGroup;
-			children = (
-				79D33B592C99BD5800F7DC1D /* Comps */,
-				796064252C96FA37000ACF69 /* GiveupOnboardView.swift */,
-				79D33B372C97F70300F7DC1D /* GiveupViewModel.swift */,
-				79D33B3E2C98039900F7DC1D /* GiveupTitleView.swift */,
-				79D33B402C9809C600F7DC1D /* GiveupFeelView.swift */,
-				79D33B532C99563000F7DC1D /* GiveupAnotherView.swift */,
-				79D33B552C9957EF00F7DC1D /* GiveupDateView.swift */,
-				79D33B5C2C99D79100F7DC1D /* GiveupResultView.swift */,
-			);
-			path = Giveup;
-			sourceTree = "<group>";
-		};
-		79D33B392C97F81400F7DC1D /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				79D33B492C987D8200F7DC1D /* ChatViews */,
-				79D33B3A2C97F81E00F7DC1D /* Buttons.swift */,
-				79D33B422C9811D300F7DC1D /* Rects.swift */,
-				79D33B442C985E6A00F7DC1D /* Colors.swift */,
-				79D33B512C9953C400F7DC1D /* HTGSlidePicker.swift */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		79D33B462C987CE700F7DC1D /* CommonViews */ = {
+		F43D6F102C9D71CE00756290 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = CommonViews;
-			sourceTree = "<group>";
-		};
-		79D33B492C987D8200F7DC1D /* ChatViews */ = {
-			isa = PBXGroup;
-			children = (
-				79D33B472C987CF500F7DC1D /* ChatView.swift */,
-				79D33B4A2C987DDB00F7DC1D /* TypingChatAnimationView.swift */,
-				79D33B4C2C987DF200F7DC1D /* EmptyTypingChatAnimationView.swift */,
-			);
-			path = ChatViews;
-			sourceTree = "<group>";
-		};
-		79D33B4E2C987FBB00F7DC1D /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-				79D33B4F2C987FC500F7DC1D /* ChatModel.swift */,
-				79D33B5E2C99E39300F7DC1D /* FeelModel.swift */,
-			);
-			path = Domain;
-			sourceTree = "<group>";
-		};
-		79D33B592C99BD5800F7DC1D /* Comps */ = {
-			isa = PBXGroup;
-			children = (
-				79D33B572C99BD1D00F7DC1D /* CalloutBlock.swift */,
-				79D33B5A2C99BD7A00F7DC1D /* Date+.swift */,
-			);
-			path = Comps;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,8 +76,12 @@
 			buildRules = (
 			);
 			dependencies = (
+				F454BF992C9D6649000652F7 /* PBXTargetDependency */,
 			);
 			name = HTG;
+			packageProductDependencies = (
+				F43D6F112C9D71CE00756290 /* HTGModule */,
+			);
 			productName = HTG;
 			productReference = 796064082C96DD08000ACF69 /* HTG.app */;
 			productType = "com.apple.product-type.application";
@@ -231,6 +98,7 @@
 				TargetAttributes = {
 					796064072C96DD08000ACF69 = {
 						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1520;
 					};
 				};
 			};
@@ -257,8 +125,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				796064132C96DD09000ACF69 /* Preview Assets.xcassets in Resources */,
-				796064102C96DD09000ACF69 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,32 +135,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79D33B562C9957EF00F7DC1D /* GiveupDateView.swift in Sources */,
-				79D33B3B2C97F81E00F7DC1D /* Buttons.swift in Sources */,
-				79D33B452C985E6A00F7DC1D /* Colors.swift in Sources */,
-				79D33B5F2C99E39300F7DC1D /* FeelModel.swift in Sources */,
-				79D33B3F2C98039900F7DC1D /* GiveupTitleView.swift in Sources */,
-				79D33B5D2C99D79100F7DC1D /* GiveupResultView.swift in Sources */,
-				796064212C96EC0F000ACF69 /* HomeView.swift in Sources */,
-				79D33B482C987CF500F7DC1D /* ChatView.swift in Sources */,
-				79D33B522C9953C400F7DC1D /* HTGSlidePicker.swift in Sources */,
-				79D33B5B2C99BD7A00F7DC1D /* Date+.swift in Sources */,
-				79D33B502C987FC500F7DC1D /* ChatModel.swift in Sources */,
-				79D33B542C99563000F7DC1D /* GiveupAnotherView.swift in Sources */,
-				79D33B412C9809C600F7DC1D /* GiveupFeelView.swift in Sources */,
-				79D33B3D2C98018C00F7DC1D /* HomeViewModel.swift in Sources */,
-				79D33B432C9811D300F7DC1D /* Rects.swift in Sources */,
-				796064262C96FA37000ACF69 /* GiveupOnboardView.swift in Sources */,
-				79D33B4D2C987DF200F7DC1D /* EmptyTypingChatAnimationView.swift in Sources */,
-				79D33B4B2C987DDB00F7DC1D /* TypingChatAnimationView.swift in Sources */,
-				7960640C2C96DD08000ACF69 /* HTGApp.swift in Sources */,
-				79D33B382C97F70300F7DC1D /* GiveupViewModel.swift in Sources */,
-				79D33B582C99BD1D00F7DC1D /* CalloutBlock.swift in Sources */,
-				7960641C2C96DD34000ACF69 /* Onboard.swift in Sources */,
+				F454BF972C9D658F000652F7 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F454BF992C9D6649000652F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = F454BF982C9D6649000652F7 /* HTGModule */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		796064142C96DD09000ACF69 /* Debug */ = {
@@ -421,9 +273,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"HTG/Preview Content\"";
 				DEVELOPMENT_TEAM = X64MATB2CC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -440,6 +292,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = annapo.HTG;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -450,9 +303,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"HTG/Preview Content\"";
 				DEVELOPMENT_TEAM = X64MATB2CC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -496,6 +349,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F43D6F112C9D71CE00756290 /* HTGModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HTGModule;
+		};
+		F454BF982C9D6649000652F7 /* HTGModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HTGModule;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 796064002C96DD08000ACF69 /* Project object */;
 }

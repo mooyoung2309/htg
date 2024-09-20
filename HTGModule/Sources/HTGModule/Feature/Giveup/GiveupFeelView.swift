@@ -74,7 +74,7 @@ extension GiveupFeelView {
                     Text(feel.title)
                         .underline(viewModel.selectedFeels.contains(where: { $0.title == feel.title }))
                 }
-                .foregroundStyle(.blackOr)
+                .foregroundStyle(.htg(.black))
             }
         }
     }

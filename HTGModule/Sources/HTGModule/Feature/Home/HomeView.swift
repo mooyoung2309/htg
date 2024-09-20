@@ -66,7 +66,7 @@ struct HomeView: View {
                         }
                     }
                     .contentShape(Rectangle())
-                    .foregroundStyle(.blackOr)
+                    .foregroundStyle(.htg(.black))
                 }
                 .buttonStyle(.htgPrimaryOutlined(size: .l, stretch: true))
                 .padding()
@@ -88,7 +88,7 @@ struct HomeView: View {
         .frame(maxWidth: .infinity)
         .background {
             RoundedRectangle(cornerRadius: 20)
-                .fill(.blackOr)
+                .fill(.htg(.black))
         }
     }
 }

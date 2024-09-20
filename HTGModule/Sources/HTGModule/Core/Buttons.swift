@@ -40,9 +40,9 @@ public struct HTGPrimaryButtonStyle: ButtonStyle {
                 HTGButtonStyleModifier(
                     size: size,
                     isPressed: configuration.isPressed,
-                    textColor: .whiteOr,
-                    fillColor: .blackOr,
-                    pressedColor: .blackOr
+                    textColor: .htg(.white),
+                    fillColor: .htg(.black),
+                    pressedColor: .htg(.black)
                 )
             )
     }
@@ -74,10 +74,10 @@ public struct HTGPrimaryOutlinedButtonStyle: ButtonStyle {
                 HTGButtonStyleModifier(
                     size: size,
                     isPressed: configuration.isPressed,
-                    textColor: .blackOr,
+                    textColor: .htg(.black),
                     fillColor: .clear,
                     pressedColor: .clear,
-                    borderColor: .blackOr
+                    borderColor: .htg(.black)
                 )
             )
     }
@@ -168,14 +168,6 @@ private extension ButtonSize {
 
     var cornerRadius: CGFloat {
         return 0
-        switch self {
-        case .l:
-            12
-        case .m:
-            10
-        case .s:
-            8
-        }
     }
 }
 

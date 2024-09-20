@@ -22,7 +22,7 @@ public enum ChatStyle {
     var strokeColor: Color {
         switch self {
         case .primary: return .clear
-        case .outlined: return .blackOr
+        case .outlined: return .htg(.black)
         }
     }
 }

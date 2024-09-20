@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-@main
-struct HTGApp: App {
-    var body: some Scene {
+public struct HTGApp: App {
+    public init() {}
+    public var body: some Scene {
         WindowGroup {
             HomeNavigationView(viewModel: .init())
         }
