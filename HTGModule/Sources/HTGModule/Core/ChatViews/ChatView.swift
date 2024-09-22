@@ -32,7 +32,7 @@ extension View {
         self.padding(10)
             .frame(minHeight: 50)
             .background {
-                RoundedRectangle(cornerRadius: 20)
+                RoundedRectangle(cornerRadius: 0)
                     .fill(style.fillColor)
                     .stroke(style.strokeColor)
             }

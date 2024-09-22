@@ -35,19 +35,15 @@ private struct SystemChatView: View {
     private let chat: ChatModel
     private let delay: Double
     
-    public var onTap: () -> Void
-    
     @State var isTyping: Bool = true
     @State var showEmpty: Bool = true
     
     init(
         chat: ChatModel,
-        delay: Double,
-        onTap: @escaping () -> Void
+        delay: Double
     ) {
         self.chat = chat
         self.delay = delay
-        self.onTap = onTap
     }
     
     var body: some View {
@@ -62,19 +58,9 @@ private struct SystemChatView: View {
                     }
                 }
         } else {
-            VStack(alignment: .trailing) {
-                TypingChatAnimationView(isTyping: $isTyping, title: chat.message)
-                    .font(.callout)
-                    .chatRect(.primary)
-                if !isTyping && chat.action {
-                    Button {
-                        onTap()
-                    } label: {
-                        Image(systemName: "arrowshape.right.circle.fill")
-                            .font(.title3)
-                    }
-                }
-            }
+            TypingChatAnimationView(isTyping: $isTyping, title: chat.message)
+                .font(.callout)
+                .chatRect(.primary)
         }
     }
 }
@@ -98,6 +84,7 @@ extension GiveupTitleView {
         ScrollView {
             VStack {
                 CalloutBlock(title: "첫번째로 어떤 것을 포기할 것인지 생각해보는 시간을 가져보겠습니다. 참고로 이 대화는 기록되지 않습니다.")
+                    .padding()
                 ForEach(viewModel.chats) { chat in
                     switch chat.role {
                     case .system:
@@ -112,14 +99,9 @@ extension GiveupTitleView {
     }
     
     private func systemChatView(chat: ChatModel) -> some View {
-        VStack {
-            HStack {
-                SystemChatView(chat: chat, delay: 2) {
-                    viewModel.title = chat.message
-                    viewModel.navigate(dest: .date)
-                }
-                Spacer()
-            }
+        HStack {
+            SystemChatView(chat: chat, delay: 2)
+            Spacer()
         }
     }
     
@@ -138,20 +120,20 @@ extension GiveupTitleView {
                 .onSubmit {
                     sendMessage()
                 }
-            
-            Button {
-                sendMessage()
-            } label: {
-                Image(systemName: "arrow.up.circle.fill")
-                    .font(.title)
+            Spacer()
+            if !message.isEmpty {
+                Button {
+                    sendMessage()
+                } label: {
+                    Text("보내기")
+                }
+                .buttonStyle(.htgPrimary(size: .s))
             }
-            .foregroundStyle(message.isEmpty ? .clear : .blue)
-            .disabled(message.isEmpty)
         }
         .padding(.horizontal)
-        .padding(.vertical, 5)
+        .padding(.vertical, 10)
         .background {
-            RoundedRectangle(cornerRadius: 20)
+            RoundedRectangle(cornerRadius: 0)
                 .stroke(.black)
         }
     }
