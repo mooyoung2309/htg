@@ -115,28 +115,28 @@ extension GiveupTitleView {
                 .chatRect(.outlined)
         }
     }
-    
+
     private var messageView: some View {
         HStack {
             TextField("메세지를 입력해주세요.", text: $message)
+                .frame(height: 39)
+                .padding(.horizontal)
                 .onSubmit {
                     sendMessage()
                 }
-            Spacer()
-            if !message.isEmpty {
-                Button {
-                    sendMessage()
-                } label: {
-                    Text("보내기")
+                .background {
+                    RoundedRectangle(cornerRadius: 0)
+                        .stroke(.htg(.black), lineWidth: 1)
                 }
-                .buttonStyle(.htgPrimary(size: .s))
+            
+            if viewModel.chats.count > 1 {
+                Button {
+                    viewModel.delegate?.requestNavigation(self.viewModel, to: .date)
+                } label: {
+                    Text("다음으로")
+                }
+                .buttonStyle(.htgPrimary(size: .m))
             }
-        }
-        .padding(.horizontal)
-        .padding(.vertical, 10)
-        .background {
-            RoundedRectangle(cornerRadius: 0)
-                .stroke(.black)
         }
     }
     

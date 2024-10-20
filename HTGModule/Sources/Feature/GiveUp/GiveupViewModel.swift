@@ -37,11 +37,6 @@ public class GiveupViewModel {
     }
     
     public func sendMessage(message: String) {
-        if isMessageFinish(message: message) && chats.count > 2 {
-            self.navigate(dest: .date)
-            return
-        }
-
         let userChat = ChatModel.init(role: .user, message: message)
         let systemChat = ChatModel.init(role: .system, message: "\(message)을 포기하고 싶은건가요?")
         
@@ -68,11 +63,6 @@ public class GiveupViewModel {
     
     public func addOtherOption(option: String) {
         self.otherOptions.append(option)
-    }
-    
-    private func isMessageFinish(message: String) -> Bool {
-        let finshes = ["네", "네네", "응", "응응", "ㅇ", "ㅇㅇ", "d", "dd", "어", "어어", "ㄱ", "ㄱㄱ"]
-        return finshes.contains(message)
     }
 }
 

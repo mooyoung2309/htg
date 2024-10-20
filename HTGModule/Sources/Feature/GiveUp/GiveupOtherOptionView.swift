@@ -48,7 +48,7 @@ extension GiveupOtherOptionView {
             HStack {
                 TextField("대안을 입력해주세요.", text: $input)
                     .frame(height: 39)
-                    .padding(.horizontal, 14)
+                    .padding(.horizontal)
                     .background {
                         RoundedRectangle(cornerRadius: 0)
                             .stroke(.htg(.black), lineWidth: 1)
@@ -57,14 +57,14 @@ extension GiveupOtherOptionView {
                         viewModel.addOtherOption(option: input)
                         input = ""
                     }
-                
-                Button {
-                    viewModel.delegate?.requestNavigation(self.viewModel, to: .result)
-                } label: {
-                    Text("다음")
+                if !viewModel.otherOptions.isEmpty {
+                    Button {
+                        viewModel.delegate?.requestNavigation(self.viewModel, to: .result)
+                    } label: {
+                        Text("다음으로")
+                    }
+                    .buttonStyle(.htgPrimary(size: .m))
                 }
-                .buttonStyle(.htgPrimary(size: .m))
-                .disabled(viewModel.otherOptions.isEmpty)
             }
         }
         .padding()

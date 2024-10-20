@@ -87,13 +87,13 @@ extension GiveupFeelView {
             } label: {
                 Text("더보기")
             }
-            .buttonStyle(.htgPrimaryOutlined(size: .l))
+            .buttonStyle(.htgPrimaryOutlined(size: .m))
             Button {
                 viewModel.navigate(dest: .another)
             } label: {
                 Text("다음으로")
             }
-            .buttonStyle(.htgPrimary(size: .l, stretch: true))
+            .buttonStyle(.htgPrimary(size: .m, stretch: true))
         }
     }
 }
