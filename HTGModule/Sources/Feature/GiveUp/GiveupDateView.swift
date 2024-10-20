@@ -97,7 +97,7 @@ extension GiveupDateView {
             } label: {
                 Text("다음으로")
             }
-            .buttonStyle(.htgPrimary(size: .l, stretch: true))
+            .buttonStyle(.htgPrimary(size: .m, stretch: true))
         }
         .padding(.horizontal)
     }
@@ -110,6 +110,7 @@ extension GiveupDateView {
             DatePicker(
                 "시작한 날짜",
                 selection: $date,
+                in: ...Date(),
                 displayedComponents: [.date]
             )
             .datePickerStyle(.graphical)

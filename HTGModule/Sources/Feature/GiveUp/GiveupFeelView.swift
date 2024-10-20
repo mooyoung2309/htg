@@ -26,7 +26,7 @@ extension GiveupFeelView {
         ZStack {
             ScrollView {
                 VStack {
-                    CalloutBlock(title: "\((viewModel.date ?? .now).day)일이나 지속 되었군요. 힘들겠지만, 감정을 떠올려보세요. 어렵다면 나중에 해도 괜찮습니다.")
+                    CalloutBlock(title: "\(getDurationString())일이나 지속 되었군요. 힘들겠지만, 감정을 떠올려보세요. 어렵다면 나중에 해도 괜찮습니다.")
                         .padding()
                     selectedFeelsView
                     feelView
@@ -41,6 +41,13 @@ extension GiveupFeelView {
             }
             .padding()
         }
+    }
+    
+    private func getDurationString() -> String {
+        guard let date = viewModel.date else { return "0" }
+        let calendar = Calendar.current
+        let duration = calendar.dateComponents([.day], from: date, to: Date())
+        return "\(duration.day ?? 0)"
     }
     
     private var selectedFeelsView: some View {

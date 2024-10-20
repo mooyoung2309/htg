@@ -41,7 +41,7 @@ extension GiveupOnboardView {
                 } label: {
                     Text("시작하기")
                 }
-                .buttonStyle(.htgPrimary(size: .l, stretch: true))
+                .buttonStyle(.htgPrimary(size: .m, stretch: true))
             }
         }
         .padding(.horizontal)
