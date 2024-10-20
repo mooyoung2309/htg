@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import DomainInterface
 
 public protocol GiveupViewModelDelegate: AnyObject {
     func requestNavigation(_ viewModel: GiveupViewModel, to: GiveupDestination)
@@ -38,14 +39,14 @@ public class GiveupViewModel {
         self.title = message
         self.chats.append(userChat)
 
-        Task {
-            do {
-                try await Task.sleep(for: .milliseconds(200))
-                self.chats.append(systemChat)
-            } catch {
-                print(error)
-            }
-        }
+//        Task {
+//            do {
+//                try await Task.sleep(for: .milliseconds(200))
+//                self.chats.append(systemChat)
+//            } catch {
+//                print(error)
+//            }
+//        }
     }
     
     public func toggleFeel(feel: FeelModel) {

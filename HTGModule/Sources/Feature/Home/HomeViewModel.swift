@@ -7,23 +7,23 @@
 
 import Foundation
 
-enum HomeDestination: Hashable {
+public enum HomeDestination: Hashable {
     case giveup(GiveupDestination)
 }
 
 @Observable
-class HomeViewModel {
+public class HomeViewModel {
     public var path: [HomeDestination] = []
     
     public var giveupViewModel: GiveupViewModel = .init()
     
-    init() { 
+    public init() {
         self.giveupViewModel.delegate = self
     }
 }
 
 extension HomeViewModel: GiveupViewModelDelegate {
-    func requestNavigation(_ viewModel: GiveupViewModel, to: GiveupDestination) {
+    public func requestNavigation(_ viewModel: GiveupViewModel, to: GiveupDestination) {
         self.path.append(.giveup(to))
     }
 }

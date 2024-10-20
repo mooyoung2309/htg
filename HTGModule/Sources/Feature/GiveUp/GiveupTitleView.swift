@@ -7,6 +7,8 @@
 
 import Foundation
 import SwiftUI
+import DomainInterface
+import Shared
 
 public struct GiveupTitleView: View {
     @State var viewModel: GiveupViewModel

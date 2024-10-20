@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Shared
 
 public struct GiveupOnboardView: View {
     @State var viewModel: GiveupViewModel

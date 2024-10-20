@@ -7,8 +7,8 @@
 
 import Foundation
 
-public enum FeelModel: CaseIterable {
-    public static var allCases: [FeelModel] = [] + Positive.allCases.map {.positive($0)} + Negative.allCases.map {.negative($0)} + ETC.allCases.map {.etc($0)}
+public enum FeelModel: CaseIterable, Sendable {
+    public static let allCases: [FeelModel] = [] + Positive.allCases.map {.positive($0)} + Negative.allCases.map {.negative($0)} + ETC.allCases.map {.etc($0)}
     
     case positive(Positive)
     case negative(Negative)
@@ -25,7 +25,7 @@ public enum FeelModel: CaseIterable {
         }
     }
     
-    public enum Positive: String, CaseIterable {
+    public enum Positive: String, CaseIterable, Sendable {
         case happy = "행복"
         case excited = "신남"
         case joyful = "즐거움"
@@ -77,7 +77,7 @@ public enum FeelModel: CaseIterable {
         case harmonious = "조화로움"
     }
     
-    public enum Negative: String, CaseIterable {
+    public enum Negative: String, CaseIterable, Sendable {
         case sad = "슬픔"
         case angry = "분노"
         case afraid = "두려움"
@@ -128,7 +128,7 @@ public enum FeelModel: CaseIterable {
         case dismayed = "경악"
     }
     
-    public enum ETC: String, CaseIterable {
+    public enum ETC: String, CaseIterable, Sendable {
         case neutral = "중립"
         case surprised = "놀람"
         case indifferent = "무관심"

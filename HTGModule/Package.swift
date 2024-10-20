@@ -16,30 +16,49 @@ let package = Package(
         .target(
             name: "HTGModule",
             dependencies: [
-                .target(name: "Feature"),
                 .target(name: "FeatureInterface"),
+                .target(name: "Feature"),
+                .target(name: "DomainInterface"),
                 .target(name: "Domain"),
+                .target(name: "Core"),
+                .target(name: "Shared"),
             ],
             path: "Sources/App",
             resources: [.process("Resources")]
         ),
         .target(
-            name: "Feature",
-            dependencies: [
-                .target(name: "FeatureInterface"),
-            ],
-            path: "Sources/Feature"
-        ),
-        .target(
             name: "FeatureInterface",
             dependencies: [
                 .target(name: "DomainInterface"),
+                .target(name: "Shared"),
             ],
             path: "Sources/FeatureInterface"
         ),
         .target(
+            name: "FeatureUI",
+            dependencies: [
+                .target(name: "FeatureInterface"),
+                .target(name: "Shared"),
+            ],
+            path: "Sources/FeatureUI"
+        ),
+        .target(
+            name: "Feature",
+            dependencies: [
+                .target(name: "FeatureInterface"),
+                .target(name: "FeatureUI"),
+                .target(name: "DomainInterface"),
+                .target(name: "Domain"),
+                .target(name: "Core"),
+                .target(name: "Shared"),
+            ],
+            path: "Sources/Feature"
+        ),
+        .target(
             name: "DomainInterface",
-            dependencies: [],
+            dependencies: [
+                .target(name: "Shared"),
+            ],
             path: "Sources/DomainInterface"
         ),
         .target(
@@ -52,25 +71,31 @@ let package = Package(
         ),
         .target(
             name: "DataInterface",
-            dependencies: [],
+            dependencies: [
+                .target(name: "Shared"),
+            ],
             path: "Sources/DataInterface"
         ),
         .target(
             name: "Data",
             dependencies: [
                 .target(name: "DataInterface"),
+                .target(name: "Shared"),
             ],
             path: "Sources/Data"
         ),
         .target(
             name: "Core",
-            dependencies: [],
+            dependencies: [
+                .target(name: "Shared"),
+            ],
             path: "Sources/Core"
         ),
         .target(
             name: "Shared",
             dependencies: [],
-            path: "Sources/Shared"
+            path: "Sources/Shared",
+            resources: [.process("Resources")]
         )
     ]
 )

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import DomainInterface
 
 public struct GiveupFeelView: View {
     var viewModel: GiveupViewModel

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Feature
 
 public struct HTGApp: App {
     public init() {}
