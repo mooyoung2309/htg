@@ -28,7 +28,7 @@ extension GiveupResultView {
             ScrollView {
                 VStack(alignment: .leading, spacing: 20) {
                     CalloutBlock(title: "고생하셨습니다. 포기란 쉬운 것일 수도, 어려운 것 일 수도 있지만 더 나은 방향으로 결정을 도울 수 있으면 좋겠습니다. 결과를 요약해드리겠습니다.")
-
+                    
                     section(
                         title: "기본 정보",
                         subs: descriptionSectionSubs()
@@ -87,22 +87,22 @@ extension GiveupResultView {
                     .lineLimit(nil)
                     .multilineTextAlignment(.leading)
                     .fixedSize(horizontal: false, vertical: true)
-                    
+                
             }
         }
     }
-
+    
     private func descriptionSectionSubs() -> [String] {
         var subs: [String] = []
         
         let duration = Date.now.timeIntervalSince(viewModel.startedAt)
         let minutes = Int(duration) / 60
         let seconds = Int(duration) % 60
-
+        
         subs.append("\(String(format: "%d", minutes))분 \(String(format: "%d", seconds))초 동안 설문을 진행하였습니다.")
         subs.append("어떤 것을 포기할지 고민하는 과정에서 \(viewModel.chats.count)개의 대화를 진행하였습니다.")
         subs.append("'\(viewModel.title)'을 떠올리면 \(viewModel.selectedFeels.count)개의 감정이 떠오른다고 답변하였습니다.")
-
+        
         return subs
     }
     
@@ -132,13 +132,13 @@ extension GiveupResultView {
             return [result[0..<lastIndex].joined(separator: ", ") + " 그리고 " + result[lastIndex] + " 동안"]
         }
     }
-
-
+    
+    
     private func feelSectionSubs(feels: [FeelModel]) -> [String] {
         var positiveFeels: [FeelModel] = []
         var negativeFeels: [FeelModel] = []
         var etcFeels: [FeelModel] = []
-
+        
         for feel in viewModel.selectedFeels {
             if case .negative = feel {
                 negativeFeels.append(feel)
@@ -152,7 +152,7 @@ extension GiveupResultView {
         let negativePercentage = totalCount > 0 ? Double(negativeFeels.count) / Double(totalCount) * 100 : 0
         let positivePercentage = totalCount > 0 ? Double(positiveFeels.count) / Double(totalCount) * 100 : 0
         let etcPercentage = totalCount > 0 ? Double(etcFeels.count) / Double(totalCount) * 100 : 0
-
+        
         var subs: [String] = []
         subs.append("긍정적인 감정: \(positiveFeels.map { $0.title }.joined(separator: ", "))")
         subs.append("부정적인 감정: \(negativeFeels.map { $0.title }.joined(separator: ", "))")
@@ -161,7 +161,7 @@ extension GiveupResultView {
         
         return subs
     }
-
+    
     private func otherOptionSectionSubs(otherOptions: [String]) -> [String] {
         var subs: [String] = []
         for i in 0..<otherOptions.count {
