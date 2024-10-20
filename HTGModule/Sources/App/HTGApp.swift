@@ -12,7 +12,8 @@ public struct HTGApp: App {
     public init() {}
     public var body: some Scene {
         WindowGroup {
-            HomeNavigationView(viewModel: .init())
+            GiveupOtherOptionView.init(viewModel: .init(selectedFeels: [.negative(.afraid), .positive(.confident), .negative(.annoyed)]))
+//            HomeNavigationView(viewModel: .init())
         }
     }
 }

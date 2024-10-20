@@ -100,7 +100,7 @@ private struct HTGButtonStyleModifier: ViewModifier {
         let pressEffect = isPressed || isPressEffect
         content
             .font(size.font)
-            .foregroundStyle(isEnabled ? textColor : .gray)
+            .foregroundStyle(textColor)
             .padding(size.paddingInsets)
             .background {
                 OZDisablableRect(
@@ -160,7 +160,7 @@ private extension ButtonSize {
         case .l:
             EdgeInsets(top: 13, leading: 18, bottom: 13, trailing: 18)
         case .m:
-            EdgeInsets(top: 9, leading: 14, bottom: 9, trailing: 14)
+            EdgeInsets(top: 10, leading: 14, bottom: 10, trailing: 14)
         case .s:
             EdgeInsets(top: 7, leading: 10, bottom: 7, trailing: 10)
         }

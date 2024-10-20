@@ -41,7 +41,9 @@ public struct HomeNavigationView: View {
         case .feel:
             GiveupFeelView(viewModel: vm)
         case .another:
-            GiveupAnotherView(viewModel: vm)
+            GiveupOtherOptionView(viewModel: vm)
+        case .result:
+            GiveupResultView(viewModel: vm)
         }
     }
 }

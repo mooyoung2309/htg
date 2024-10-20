@@ -16,12 +16,21 @@ public protocol GiveupViewModelDelegate: AnyObject {
 public class GiveupViewModel {
     var title: String = ""
     var date: Date?
-    var chats: [ChatModel] = []
-    var selectedFeels: [FeelModel] = []
+    var chats: [ChatModel]
+    var selectedFeels: [FeelModel]
+    var otherOptions: [String]
     
     weak var delegate: (any GiveupViewModelDelegate)?
     
-    public init() { }
+    public init(
+        chats: [ChatModel] = [],
+        selectedFeels: [FeelModel] = [],
+        otherOptions: [String] = []
+    ) {
+        self.chats = chats
+        self.selectedFeels = selectedFeels
+        self.otherOptions = otherOptions
+    }
     
     public func navigate(dest: GiveupDestination) {
         self.delegate?.requestNavigation(self, to: dest)
@@ -57,6 +66,10 @@ public class GiveupViewModel {
         }
     }
     
+    public func addOtherOption(option: String) {
+        self.otherOptions.append(option)
+    }
+    
     private func isMessageFinish(message: String) -> Bool {
         let finshes = ["네", "네네", "응", "응응", "ㅇ", "ㅇㅇ", "d", "dd", "어", "어어", "ㄱ", "ㄱㄱ"]
         return finshes.contains(message)
@@ -69,4 +82,5 @@ public enum GiveupDestination: Sendable {
     case date
     case feel
     case another
+    case result
 }
