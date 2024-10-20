@@ -23,7 +23,7 @@ public struct GiveupResultView: View {
 }
 
 extension GiveupResultView {
-    private var rootView: some View { ㅇ
+    private var rootView: some View {
         ZStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 20) {

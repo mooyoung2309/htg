@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		796B7CAA2CC4C248009B3188 /* HTGModule in Frameworks */ = {isa = PBXBuildFile; productRef = 796B7CA92CC4C248009B3188 /* HTGModule */; };
+		79C549972CC4F1460073FC43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79C549962CC4F1460073FC43 /* Assets.xcassets */; };
 		F454BF972C9D658F000652F7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F454BF962C9D658F000652F7 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		796064082C96DD08000ACF69 /* HTG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HTG.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79C549962CC4F1460073FC43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F454BF952C9D6556000652F7 /* HTGModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = HTGModule; sourceTree = "<group>"; };
 		F454BF962C9D658F000652F7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				F454BF962C9D658F000652F7 /* main.swift */,
+				79C549962CC4F1460073FC43 /* Assets.xcassets */,
 			);
 			path = HTG;
 			sourceTree = "<group>";
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79C549972CC4F1460073FC43 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +283,7 @@
 				DEVELOPMENT_TEAM = X64MATB2CC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "포기하는방법";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -309,6 +314,7 @@
 				DEVELOPMENT_TEAM = X64MATB2CC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "포기하는방법";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
