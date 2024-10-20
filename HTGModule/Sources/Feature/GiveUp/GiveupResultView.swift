@@ -23,30 +23,30 @@ public struct GiveupResultView: View {
 }
 
 extension GiveupResultView {
-    private var rootView: some View {
+    private var rootView: some View { ㅇ
         ZStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 20) {
                     CalloutBlock(title: "고생하셨습니다. 포기란 쉬운 것일 수도, 어려운 것 일 수도 있지만 더 나은 방향으로 결정을 도울 수 있으면 좋겠습니다. 결과를 요약해드리겠습니다.")
 
                     section(
-                        title: "우선 제가 체크한 몇가지 추가적인 정보들이 있습니다.",
+                        title: "기본 정보",
                         subs: descriptionSectionSubs()
                     )
                     section(
-                        title: "당신은 어떤것을 포기하려고 하시나요",
+                        title: "1. 포기 정하기",
                         subs: [viewModel.title]
                     )
                     section(
-                        title: "언제부터 지속되었나요",
+                        title: "2. 지속된 기간",
                         subs: dateSectionSubs(date: viewModel.date ?? .now)
                     )
                     section(
-                        title: "어떤 감정이 떠오르나요",
+                        title: "3. 감정 떠올리기",
                         subs: feelSectionSubs(feels: viewModel.selectedFeels)
                     )
                     section(
-                        title: "다른 대안이 있나요",
+                        title: "4. 대안 찾기",
                         subs: otherOptionSectionSubs(otherOptions: viewModel.otherOptions)
                     )
                 }
