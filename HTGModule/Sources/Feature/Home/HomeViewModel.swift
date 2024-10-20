@@ -7,11 +7,11 @@
 
 import Foundation
 
-public enum HomeDestination: Hashable {
+public enum HomeDestination: Sendable, Hashable {
     case giveup(GiveupDestination)
 }
 
-@Observable
+@MainActor @Observable
 public class HomeViewModel {
     public var path: [HomeDestination] = []
     
@@ -22,7 +22,7 @@ public class HomeViewModel {
     }
 }
 
-extension HomeViewModel: GiveupViewModelDelegate {
+extension HomeViewModel: @preconcurrency GiveupViewModelDelegate {
     public func requestNavigation(_ viewModel: GiveupViewModel, to: GiveupDestination) {
         self.path.append(.giveup(to))
     }

@@ -7,12 +7,12 @@
 
 import Foundation
 
-public enum ChatRole {
+public enum ChatRole: Sendable {
     case system
     case user
 }
 
-public struct ChatModel: Identifiable {
+public struct ChatModel: Identifiable, Sendable {
     public let id: UUID = .init()
     public let role: ChatRole
     public let message: String
