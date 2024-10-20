@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+import GiveUp
+
 struct HomeNavigationView: View {
     @State var viewModel: HomeViewModel
     
@@ -26,7 +28,7 @@ struct HomeNavigationView: View {
     
     @ViewBuilder
     private func giveup(dest: GiveupDestination) -> some View {
-        let vm = viewModel.giveupViewModel
+        let vm = $viewModel.giveupViewModel
         switch dest {
         case .onboard:
             GiveupOnboardView(viewModel: vm)
