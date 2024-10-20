@@ -23,7 +23,11 @@ public class HomeViewModel {
 }
 
 extension HomeViewModel: @preconcurrency GiveupViewModelDelegate {
-    public func requestNavigation(_ viewModel: GiveupViewModel, to: GiveupDestination) {
-        self.path.append(.giveup(to))
+    public func requestNavigation(_ viewModel: GiveupViewModel, to: GiveupDestination?) {
+        if let to {
+            self.path.append(.giveup(to))
+        } else {
+            self.path = []
+        }
     }
 }

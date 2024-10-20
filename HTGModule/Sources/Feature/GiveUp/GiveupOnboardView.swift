@@ -18,6 +18,9 @@ public struct GiveupOnboardView: View {
     public var body: some View {
         rootView
             .navigationTitle("포기")
+            .onAppear {
+                self.viewModel.onAppear()
+            }
     }
 }
 

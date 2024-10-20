@@ -23,10 +23,8 @@ public struct GiveupTitleView: View {
     public var body: some View {
         rootView
             .onAppear {
-                viewModel.chats.append(.init(role: .system, message: "당신은 어떤것을 포기하려고 하시나요?", action: false))
-            }
-            .onDisappear {
                 viewModel.chats.removeAll()
+                viewModel.chats.append(.init(role: .system, message: "당신은 어떤것을 포기하려고 하시나요?", action: false))
             }
             .navigationTitle("포기 설정하기")
             

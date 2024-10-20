@@ -9,11 +9,13 @@ import SwiftUI
 import DomainInterface
 
 public protocol GiveupViewModelDelegate: AnyObject {
-    func requestNavigation(_ viewModel: GiveupViewModel, to: GiveupDestination)
+    func requestNavigation(_ viewModel: GiveupViewModel, to: GiveupDestination?)
 }
 
 @MainActor @Observable
 public class GiveupViewModel {
+    var startedAt: Date
+
     var title: String = ""
     var date: Date?
     var chats: [ChatModel]
@@ -23,13 +25,23 @@ public class GiveupViewModel {
     weak var delegate: (any GiveupViewModelDelegate)?
     
     public init(
+        startedAt: Date = .now,
+        title: String = "",
+        date: Date? = nil,
         chats: [ChatModel] = [],
         selectedFeels: [FeelModel] = [],
         otherOptions: [String] = []
     ) {
+        self.startedAt = startedAt
+        self.title = title
+        self.date = date
         self.chats = chats
         self.selectedFeels = selectedFeels
         self.otherOptions = otherOptions
+    }
+
+    public func onAppear() {
+        self.startedAt = .now
     }
     
     public func navigate(dest: GiveupDestination) {
