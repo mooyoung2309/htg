@@ -30,7 +30,7 @@ public struct GiveupDateView: View {
                     .presentationDetents([.medium])
                     .interactiveDismissDisabled()
             }
-            .navigationTitle("시간 설정하기")
+            .navigationTitle("지속된 기간")
     }
 }
 

@@ -17,7 +17,7 @@ public struct GiveupFeelView: View {
     
     public var body: some View {
         rootView
-            .navigationTitle("감정 설정하기")
+            .navigationTitle("감정 떠올리기")
     }
 }
 

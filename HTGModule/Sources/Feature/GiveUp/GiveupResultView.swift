@@ -18,7 +18,7 @@ public struct GiveupResultView: View {
     
     public var body: some View {
         rootView
-            .navigationTitle("결과")
+            .navigationTitle("결과 및 종료")
     }
 }
 

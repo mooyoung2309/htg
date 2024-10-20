@@ -109,7 +109,11 @@ enum GiveupOnboardSection: CaseIterable {
             ]
         case .curriculum:
             return [
-                
+                "1. 포기 정하기",
+                "2. 지속된 기간",
+                "3. 감정 떠올리기",
+                "4. 대안 찾기",
+                "5. 결과 및 종료"
             ]
         }
     }

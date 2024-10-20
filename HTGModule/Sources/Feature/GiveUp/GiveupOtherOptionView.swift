@@ -20,6 +20,7 @@ public struct GiveupOtherOptionView: View {
     
     public var body: some View {
         rootView
+            .navigationTitle("대안 찾기")
     }
 }
 

@@ -26,7 +26,7 @@ public struct GiveupTitleView: View {
                 viewModel.chats.removeAll()
                 viewModel.chats.append(.init(role: .system, message: "당신은 어떤것을 포기하려고 하시나요?", action: false))
             }
-            .navigationTitle("포기 설정하기")
+            .navigationTitle("포기 정하기")
             
     }
 }
